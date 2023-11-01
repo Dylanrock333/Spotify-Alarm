@@ -6,9 +6,9 @@ function TokenFetcher() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://localhost:5000/getToken'); 
+            const response = await fetch('http://localhost:5000//'); 
             const result = await response.json();
-            console.log(result);
+            console.log(result.access_token);
             setTokens({
                 access_token: result.access_token,
                 refresh_token: result.refresh_token,

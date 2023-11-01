@@ -1,7 +1,7 @@
 import React from 'react';
-import Spotify_Auth from './Authorization';
-import TokenFetcher from './getAccessToken';
-import TokenContext from './TokenContext';
+import Spotify_Auth from './components/Authorization';
+import TokenFetcher from './components/getAccessToken';
+import TokenContext from './components/TokenContext';
 
 function App() {
   const [tokens, setTokens] = React.useState({

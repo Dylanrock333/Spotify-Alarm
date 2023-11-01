@@ -20,6 +20,9 @@ def get_all_Vlas():
 
 def get_access_token():
     return ACCESS_TOKEN["access_token"]
+
+def get_refresh_token():
+    return ACCESS_TOKEN["refresh_token"]
     
 def print_token_Vlas():
     print(ACCESS_TOKEN)
