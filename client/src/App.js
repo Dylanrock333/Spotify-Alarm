@@ -5,6 +5,7 @@ import TokenContext from './Spotify/TokenContext';
 import Playlists from './components/Playlists';
 import AlarmList from './components/Alarm/AlarmList';
 import AddAlarmForm  from './components/Alarm/AddAlarmForum.js';
+import CurrentTime from './components/Alarm/CurrentTime';
 
 function App() {
   const [alarms, setAlarms] = useState([]); 
@@ -46,11 +47,14 @@ function App() {
             <Spotify_Auth />
             <TokenFetcher />
 
+            <CurrentTime />
             <AddAlarmForm onAddAlarm={addAlarm}/>
             <AlarmList alarms={alarms} onToggleActive={toggleActive} onDelete={deleteAlarm}/>
+
+
           </div>
 
-     
+
 
         </div>
       }
